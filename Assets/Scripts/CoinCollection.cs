@@ -7,7 +7,7 @@ using TMPro;
 public class CoinCollection : MonoBehaviour
 {
     PlayerMovements _playerJumpScript;
-    private int coinsCollected = 0;
+    public static int coinsCollected = 0;
     [SerializeField] private TextMeshProUGUI coinText;
     private void Start()
     {
@@ -21,7 +21,10 @@ public class CoinCollection : MonoBehaviour
         {
             _playerJumpScript.soundManager.PlayCoinCollect();
             coinsCollected++;
-            coinText.text = ("" + coinsCollected);
+            if(coinText != null)
+            {
+                coinText.text = ("" + coinsCollected);
+            }
             if (coinsCollected >= 20)
             {
                 _playerJumpScript.soundManager.PlayWinSound();

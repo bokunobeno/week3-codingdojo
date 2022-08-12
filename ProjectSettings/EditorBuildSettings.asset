@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 1d6a5bbbe40b65a42872c6029a5cfd78
+  - enabled: 1
     path: Assets/Scenes/sandbox.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/PlayersHealth.unity
+    guid: 4fe7ba027efa64c41b354dddb1bb740b
+  - enabled: 1
+    path: Assets/Scenes/NewPlayerHealth.unity
+    guid: 28a8697d98174ea468a5ce340c4c7f4f
+  - enabled: 1
+    path: Assets/Scenes/NewGameTimer.unity
+    guid: ddf8ef2a2b9344840b36664aef104ec1
+  - enabled: 1
+    path: Assets/Scenes/SearchingForCoins.unity
+    guid: 75ef0a72a437c0342ac3c0f890926c4f
   m_configObjects: {}

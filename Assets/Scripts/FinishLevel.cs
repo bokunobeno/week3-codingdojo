@@ -9,7 +9,15 @@ public class FinishLevel : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if (CoinCollection.coinsCollected >= 20)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+            else
+            {
+                print("please collect all coins");
+            }
+            
         }
     }
 }
